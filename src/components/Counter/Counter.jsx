@@ -3,10 +3,11 @@ import styles from "./counter.module.css";
 import { useState } from "react";
 // import data from '../../data/tasks.json'
 
-const Counter = () => {
+const Counter = (props) => {
   // sample value to be replaced
   // let count = 0;
-  const[count,setCount] = useState(0)
+ 
+  const[count,setCount] = useState(props.count)
   // NOTE: do not delete `data-testid` key value pair
   return (
     <div className={styles.counter}>

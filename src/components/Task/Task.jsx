@@ -9,9 +9,9 @@ const Task = () => {
     <>
     {data.map((e)=>{
       return <li data-testid="task" className={styles.task}>
-      <input type="checkbox" data-testid="task-checkbox" />
+      <input type="checkbox" data-testid="task-checkbox" /> 
       <div data-testid="task-text">{e.text}</div>
-     <Counter/>
+     <Counter count={e.count}/>
       <button data-testid="task-remove-button">Remove</button>
     </li>
     })}
